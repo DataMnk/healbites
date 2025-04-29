@@ -1,0 +1,308 @@
+/* ======================== */
+/* HealBites Website Styles */
+/* ======================== */
+
+/* General settings */
+html {
+  background-color: #f7fcf8; /* Suave fondo verde clarito */
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  padding-bottom: 100px;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--accent-color-medium);
+  border-bottom: 2px solid var(--accent-color-light);
+  padding-bottom: 5px;
+  margin-top: 60px; /* Espacio mayor para separar secciones */
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--accent-color-dark);
+}
+
+h4 {
+  font-style: italic;
+  color: var(--accent-color-medium);
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* Links */
+a, a * {
+  text-decoration: none;
+  color: var(--accent-color-darkest);
+}
+
+a:hover {
+  color: var(--accent-color-green);
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-color-green);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--accent-color-medium);
+}
+
+/* Special case Join button animation */
+#rsvp-button {
+  transition: transform 0.2s ease-in-out;
+}
+
+#rsvp-button:hover {
+  transform: scale(1.05);
+  background-color: #6fbf4e;
+  box-shadow: 0 0 10px rgba(111, 191, 78, 0.6);
+}
+
+/* ======================== */
+/* HEADER SECTION */
+/* ======================== */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 120px; /* Más separación inicial */
+  text-align: center;
+}
+
+.header-item:nth-of-type(1) img {
+  width: 150px;
+  max-width: 100%;
+}
+
+.header-item:nth-of-type(2) {
+  flex: 1;
+}
+
+/* ======================== */
+/* NAVBAR */
+/* ======================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--accent-color-dark);
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* ======================== */
+/* ABOUT + NEED SECTIONS */
+/* (Shared Cards Style) */
+/* ======================== */
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.schedule-item {
+  flex: 1 1 250px;
+  max-width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.schedule-item:hover {
+  transform: translateY(-5px);
+}
+
+.schedule-item img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* ======================== */
+/* DEMO VIDEO + INSTAGRAM EMBED */
+/* ======================== */
+.embed-instagram {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid var(--accent-color-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+/* ======================== */
+/* JOIN OUR EARLY ACCESS FORM */
+/* ======================== */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Input error style */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: #ffd6d6;
+}
+
+/* ======================== */
+/* SUCCESS MODAL */
+/* ======================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  padding: 50px;
+  width: 80%;
+  max-width: 500px;
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  border-radius: 12px;
+}
+
+#modal-img {
+  max-width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* ======================== */
+/* FOOTER */
+/* ======================== */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--accent-color-dark);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ======================== */
+/* DARK MODE Support */
+/* ======================== */
+.dark-mode {
+  background-color: #1e2d24;
+  color: #f0fdf4;
+}
+
+.dark-mode .navbar {
+  background-color: #264333;
+}
+
+.dark-mode .footer {
+  background-color: #183220;
+}
+
+/* ======================== */
+/* COLOR VARIABLES */
+/* ======================== */
+:root {
+  --bg-color: #f7fcf8;
+  --text-color: #1B1B1B;
+  --accent-color-light: #E7F4EA;
+  --accent-color-medium: #7BBF63;
+  --accent-color-dark: #4C8B41;
+  --accent-color-darkest: #2D5D34;
+  --accent-color-green: #7BBF63;
+  --error-color-border: #e63946;
+}

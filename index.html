@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealBites AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./img/healbites_icon_1024x1024.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#need">The Need</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#join">Join Us</a></li>
+  </ul>
+  <button id="theme-button">Toggle Dark Mode</button>
+  <button id="reduce-motion-button">Reduce Motion OFF</button>
+</div>
+
+<!-- HERO SECTION -->
+<div class="header-container">
+  <div class="header-item">
+    <img id="header-img" src="./img/healbites_icon_1024x1024.png" alt="HealBites logo">
+  </div>
+  <div class="header-item">
+    <h1>HealBites AI: Personalized Nutrition for Chronic Care</h1>
+    <h3>Smarter Meals. Healthier Lives.</h3>
+    <div class="header-button">
+      <button onclick="location.href='#demo'">Watch Demo</button>
+      <button onclick="location.href='#about'">Learn More</button>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT HEALBITES -->
+<h2 id="about">About HealBites</h2>
+<p>
+  HealBites is an AI-powered nutrition platform designed for individuals managing chronic conditions like diabetes, hypertension, and kidney disease. By combining the latest clinical guidelines with personalized recommendations, HealBites empowers users to take control of their health one meal at a time.
+</p>
+<p>
+  Our mission is to bridge the gap between medical care and everyday nutrition, offering patients and healthcare providers a smarter, easier way to improve outcomes.
+</p>
+
+<!-- THE NEED FOR HEALBITES -->
+<h2 id="need">The Need</h2>
+<div class="schedule-container">
+  <div class="schedule-item">
+    <img src="./img/HealBitesPeopleCooking.png" alt="People cooking healthy">
+    <h3>Empower Patients</h3>
+    <p>Tailored meal plans to promote better health outcomes. HealBites personalizes nutrition not only to health needs, but also to cultural preferences, helping patients embrace sustainable, long-term change.</p>
+  </div>
+  <div class="schedule-item">
+    <img src="./img/HealBitesPeopleCooking.png" alt="People cooking healthy">
+    <h3>Support Providers</h3>
+    <p>With limited time for nutritional counseling, doctors need efficient tools. HealBites delivers ready-to-use plans based on clinical guidelines, saving time and improving care.</p>
+  </div>
+  <div class="schedule-item">
+    <img src="./img/HealBitesPeopleCooking.png" alt="People cooking healthy">
+    <h3>Bridge the Gap</h3>
+    <p>Chronic diseases drive 90% of U.S. healthcare spending, costing over $4.1 trillion annually. HealBites aims to reduce preventable hospitalizations and healthcare expenditures by empowering nutrition-driven disease management.</p>
+  </div>
+</div>
+
+<!-- DEMO VIDEO -->
+<h2 id="demo">Featured Demo</h2>
+<div class="embed-instagram">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/MF4Q0LJko80" title="HealBites Demo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- INSTAGRAM EMBED -->
+<div class="embed-instagram">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DG4J8SoST2q/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+  <div style="padding:16px;"><a href="https://www.instagram.com/reel/DG4J8SoST2q/" target="_blank">Check our related content on Instagram</a></div>
+  </blockquote>
+  <script async src="//www.instagram.com/embed.js"></script>
+</div>
+
+<!-- JOIN OUR EARLY ACCESS -->
+<h2 id="join">Join Our Early Access</h2>
+<div class="form-container">
+  <form action="https://formsubmit.co/info@healbites.ai" method="POST">
+    <!-- Disable CAPTCHA (optional but useful for live demos) -->
+    <input type="hidden" name="_captcha" value="false">
+  
+    <!-- Optional redirect after submission -->
+    <input type="hidden" name="_next" value="https://healbites.ai/thanks.html">
+  
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <button type="submit">Join Now</button>
+  </form>
+  
+</div>
+
+<!-- SUCCESS MODAL (shows after form submission) -->
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+    <p id="modal-text">Thanks for joining HealBites Early Access!</p>
+    <img id="modal-img" src="./img/healbites_icon_1024x1024.png" alt="HealBites Icon">
+    <button id="close-modal-button">Close</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>
+    © 2025 HealBites | <a href="https://www.codepath.org" target="_blank">CodePath</a> | <a href="https://www.mdc.edu" target="_blank">MDC</a>
+  </p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
