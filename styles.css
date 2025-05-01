@@ -198,6 +198,22 @@ button:hover {
 /* ======================== */
 /* JOIN OUR EARLY ACCESS FORM */
 /* ======================== */
+
+.form-intro {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  background-color: #e7f4ea;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1B1B1B;
+}
+.form-intro p {
+  margin-bottom: 10px;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -292,6 +308,22 @@ input {
 .dark-mode .footer {
   background-color: #183220;
 }
+
+/* Forzar el texto de las tarjetas en dark mode */
+.dark-mode .schedule-item {
+  background-color: #264333; /* fondo más oscuro y coherente con el navbar */
+  color: #e8f5e9 !important; /* texto más oscuro, visible y contrastado */
+}
+
+.dark-mode .schedule-item h3 {
+  color: #a6df98 !important; /* título verde más fuerte */
+}
+
+.dark-mode .schedule-item p {
+  color: #e0fbe5 !important; /* texto dentro de la tarjeta */
+}
+/* Hasta aqui check forzado tarjetas dark mode*/
+
 
 /* ======================== */
 /* COLOR VARIABLES */
