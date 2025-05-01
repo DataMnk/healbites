@@ -324,6 +324,41 @@ input {
 }
 /* Hasta aqui check forzado tarjetas dark mode*/
 
+.live-demo-section {
+  text-align: center;
+  margin: 60px auto 40px auto;
+  padding: 20px;
+  background-color: var(--accent-color-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  max-width: 700px;
+}
+
+.live-demo-section h2 {
+  color: var(--accent-color-dark);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.live-demo-section p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.demo-button {
+  background-color: var(--accent-color-medium);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: var(--accent-color-dark);
+}
+
 
 /* ======================== */
 /* COLOR VARIABLES */
